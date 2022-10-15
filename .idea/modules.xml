@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AUTH-SERVICE/AUTH-SERVICE.iml" filepath="$PROJECT_DIR$/AUTH-SERVICE/AUTH-SERVICE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FILE-SERVICE/FILE-SERVICE.iml" filepath="$PROJECT_DIR$/FILE-SERVICE/FILE-SERVICE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MicroServicesSpringBootApp.iml" filepath="$PROJECT_DIR$/.idea/MicroServicesSpringBootApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BUILDING-SERVICE/building-service.iml" filepath="$PROJECT_DIR$/BUILDING-SERVICE/building-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BUILDING-SERVICE2/building-service2.iml" filepath="$PROJECT_DIR$/BUILDING-SERVICE2/building-service2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/API-GETWAY/demo.iml" filepath="$PROJECT_DIR$/API-GETWAY/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/USER-SERVICE/demo (1).iml" filepath="$PROJECT_DIR$/USER-SERVICE/demo (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/EUREKA-SERVER/demo (2).iml" filepath="$PROJECT_DIR$/EUREKA-SERVER/demo (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/SERVER-CONFIG/demo (3).iml" filepath="$PROJECT_DIR$/SERVER-CONFIG/demo (3).iml" />
+      <module fileurl="file://$PROJECT_DIR$/CATEGORY-SERVICE/demo (4).iml" filepath="$PROJECT_DIR$/CATEGORY-SERVICE/demo (4).iml" />
+      <module fileurl="file://$PROJECT_DIR$/HYSTRIX-DASHBOARD/demo (5).iml" filepath="$PROJECT_DIR$/HYSTRIX-DASHBOARD/demo (5).iml" />
+    </modules>
+  </component>
+</project>

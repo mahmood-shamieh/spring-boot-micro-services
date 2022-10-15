@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/API-GETWAY/pom.xml" />
+        <option value="$PROJECT_DIR$/USER-SERVICE/pom.xml" />
+        <option value="$PROJECT_DIR$/EUREKA-SERVER/pom.xml" />
+        <option value="$PROJECT_DIR$/SERVER-CONFIG/pom.xml" />
+        <option value="$PROJECT_DIR$/CATEGORY-SERVICE/pom.xml" />
+        <option value="$PROJECT_DIR$/HYSTRIX-DASHBOARD/pom.xml" />
+        <option value="$PROJECT_DIR$/AUTH-SERVICE/pom.xml" />
+        <option value="$PROJECT_DIR$/FILE-SERVICE/pom.xml" />
+        <option value="$PROJECT_DIR$/BUILDING-SERVICE2/pom.xml" />
+        <option value="$PROJECT_DIR$/BUILDING-SERVICE/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="18" project-jdk-type="JavaSDK" />
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>

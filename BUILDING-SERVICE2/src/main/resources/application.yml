@@ -1,0 +1,20 @@
+server:
+  port: 8083
+#axon:
+#  axonserver:
+#    servers: 127.0.0.1:8124
+#    servers: axonserver-0.axonserver.default.svc.cluster.local:8124
+spring:
+  application:
+    name: BUILDING-SERVICE
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservices
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+#    show-sql: true

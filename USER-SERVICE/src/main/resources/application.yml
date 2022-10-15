@@ -1,0 +1,17 @@
+server:
+  port: 7777
+
+
+spring:
+  application:
+    name: USER-SERVICE
+#  zipkin:
+#    base-url: http://127.0.0.1:9411/
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservices
+    username: root
+    password:
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true

@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+#      enable: false
+      enable: true
+      uri: http://localhost:8180

@@ -1,0 +1,81 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: API-GATEWAY
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+#      routes:
+#        - id: USER-SERVICE
+#          uri: lb://USER-SERVICE
+#          filters:
+##            - AuthFilter
+#              args:
+#                name: USER-SERVICE
+#                fallbackuri: forward:/fallback/users
+#          predicates:
+#            - Path=/users/**
+#        - id: AUTH-SERVICE
+#          uri: lb://AUTH-SERVICE
+#          filters:
+#            - name: CircuitBreaker
+#              args:
+#                name: AUTH-SERVICE
+#                fallbackuri: forward:/fallback/users
+#          predicates:
+#            - Path=/security/**
+#        - id: FILE-SERVICE
+#          uri: lb://FILE-SERVICE
+#          filters:
+#            - name: CircuitBreaker
+#              args:
+#                name: FILE-SERVICE
+#                fallbackuri: forward:/fallback/users
+#          predicates:
+#            - Path=/files/**
+#        - id: BUILDING-SERVICE
+#          uri: lb://BUILDING-SERVICE
+#          filters:
+##            - AuthFilter
+#              args:
+#                name: BUILDING-SERVICE
+#                fallbackuri: forward:/fallback/buildings
+#          predicates:
+#            - Path=/buildings/**
+#        - id: CATEGORY-SERVICE
+#          uri: lb://CATEGORY-SERVICE
+#          filters:
+##            - AuthFilter
+#              args:
+#                name: CATEGORY-SERVICE
+#                fallbackuri: forward:/fallback/categories
+#          predicates:
+#            - Path=/categories/**
+hystrix:
+  command:
+    fallbackcmd:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 4000
+management:
+#  endpoints.web.exposure.include: gateway
+  endpoints:
+    gateway.enabled: true
+    web:
+      exposure:
+        include: hystrix.stream
